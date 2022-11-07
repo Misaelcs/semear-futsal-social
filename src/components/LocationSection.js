@@ -3,7 +3,7 @@ import SectionHeader from './SectionHeader';
 const ContentSection = () => {
   return (
 	<div className='content-section'>
-		<SectionHeader />
+		<SectionHeader index="L"/>
 		<div className="section-map">
 
     </div>

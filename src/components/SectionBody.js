@@ -1,13 +1,13 @@
 const SectionBody = (props) => {
   return (
-    <div className={'section-body ' + props.section}>
-      {props.section.paragraphs.forEach(paragraph => {
+    <div className={'section-body ' + data.section.name}>
+      {data.section[props.index].paragraphs.forEach(paragraph => {
         <>
           if(paragraph.emphasis){
               <p className='section-body-emphasis'>{paragraph.emphasis}</p>
           }
           <p className='section-body-text'>{paragraph.text}</p>
-          <img htmlSrc={paragraph.imageSrc} className='section-body-image' alt="logo"/>
+          <img src={require(paragraph.imageSrc)} className='section-body-image' alt="logo"/>
         </>  
       })};
     </div>
