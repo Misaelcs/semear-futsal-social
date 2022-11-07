@@ -7,7 +7,7 @@ const SectionBody = (props) => {
               <p className='section-body-emphasis'>{paragraph.emphasis}</p>
           }
           <p className='section-body-text'>{paragraph.text}</p>
-          <img htmlSrc={paragraph.imageSrc} className='section-body-image'/>
+          <img htmlSrc={paragraph.imageSrc} className='section-body-image' alt="logo"/>
         </>  
       })};
     </div>
