@@ -1,11 +1,14 @@
 import './App.css';
-import FirstComponent from './components/ContentSection';
+import './Imports.js';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-    <h1>Semear Futsal</h1>
-    <FirstComponent />
+      <Header />
+      <Display />
+      <ContentSection />
+      <LocationSection />
+      <Contact />
     </div>
   );
 }
