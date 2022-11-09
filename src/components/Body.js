@@ -1,7 +1,9 @@
+import ContentSection from './ContentSection.js';
+
 function Body(props) {
-  return (
-    props.sections.forEach(section => {
-      <ContentSection section={section}/>
-    })
-  )
+  for (const i in props.data) {
+    return <ContentSection data={props.data[i]}/>
+  }
 }
+
+export default Body;

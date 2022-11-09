@@ -1,11 +1,11 @@
 import HeaderNav from './HeaderNav.js';
 
-const Header = () => {
+const Header = (props) => {
   return (
     <div className="page-header">
       <div className="header-inner">
         <div className="header-logo-outer">
-          <img src={require(data.header.logo)} className="header-logo-img" alt="logo"/>
+          <img src={props.data.logo} className="header-logo-img" alt="logo"/>
         </div>
 
         <HeaderNav />

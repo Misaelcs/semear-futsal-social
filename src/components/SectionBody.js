@@ -1,17 +1,14 @@
 const SectionBody = (props) => {
-  return (
-    <div className={'section-body ' + data.section.name}>
-      {data.section[props.index].paragraphs.forEach(paragraph => {
+      for (const i in props.data.paragraphs) {
+        console.log(props.data.paragraphs[i])
+       return (
         <>
-          if(paragraph.emphasis){
-              <p className='section-body-emphasis'>{paragraph.emphasis}</p>
-          }
-          <p className='section-body-text'>{paragraph.text}</p>
-          <img src={require(paragraph.imageSrc)} className='section-body-image' alt="logo"/>
+          {props.data.paragraphs[i].emphasis != undefined ? <p>{props.data.paragraphs[i].emphasis}</p> : null}
+          <p>{props.data.paragraphs[i].text}</p>
+          <img src={props.data.paragraphs[i].imageSrc} alt="logo"/>
         </>  
-      })};
-    </div>
-  );
+       )
+      };
 }
 
 export default SectionBody;
